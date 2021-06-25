@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona internetowa</title>
+    <script src="code.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="col-12">
+        <header class="NavBarWrapper col-12">
+            <nav id="LeftNavBar">
+                <a href="index.html"><img src="zdjęcia/logo.png" alt="logo" class="logoImage"  class="button"></a>
+                <a href="index.html" class="logo" class="button">Azura</a>
+            </nav>
+            <nav id="CenterNavBar">
+                <ul>
+                    <li><a href = "index.html" class="button">Home</a></li>
+                    <li><a href = "najnowsze.html" class="button">Najnowsze</a></li>
+                    <li><a href = "archiwum.html" class="button">Archiwum</a></li>
+                </ul>
+            </nav>
+            <nav id="RightNavBar">
+                <ul>
+                    <li><a href = "portfolio.html" class="button">Portfolio</a></li>
+                    <li><a href = "kontakt.html" class="button">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="tresc col-12">
+            <div class="glowna" style="height: auto;">
+                <div class="linia">
+                    <h5 id="kontakt-tekst"> Kontakt</h5>
+                    <div class=" col-8 kontakt-tekst2" style="padding: 20px;">
+                        <form id="fcf-form-id" class="fcf-form-class" method="post" action="dzieki.html">
+        
+                            <div>
+                                <label for="text" class="formularz-tekst">Your name</label>
+                                <div >
+                                    <input type="text" id="Name" name="Name" class="form-control" required>
+                                </div>
+                            </div>
+                    
+                            <div>
+                                <label for="Email" class="formularz-tekst">Your email address</label>
+                                <div>
+                                    <input type="email" id="Email" name="Email" class="form-control" required>
+                                </div>
+                            </div>
+                    
+                            <div>
+                                <label for="Message" class="fcf-label formularz-tekst">Your message</label>
+                                <div>
+                                    <textarea id="Message" name="Message" class="form-control" rows="6" maxlength="3000" required></textarea>
+                                </div>
+                            </div>
+                    
+                            <div>
+                                <button type="submit"class="przycisk">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-3" >
+                        <a id="nr-kontaktowy" href="tel:+1-555-555-1212"> Numer Kontaktowy: +1-555-555-1212</a>
+                    </div>
+                    <div class="col-12" style="height: 100%;">
+                        <iframe class="mapa"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20743.459212371636!2d19.964786527863005!3d49.46689192849877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4715e5a45941674b%3A0x6045c234bfdd9b86!2sLud%C5%BAmierz!5e0!3m2!1spl!2spl!4v1623018378474!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    
+                </div>
+                <footer style="color:#fff" >
+                        <div>
+                            Autor: Dawid Komperda
+                        </div>
+                    </footer>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+</body>
+</html>

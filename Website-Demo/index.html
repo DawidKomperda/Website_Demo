@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona internetowa</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function()
+        {
+            const toggleButton = document.getElementsByClassName('toggle-button')[0]
+            const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+            
+            toggleButton.addEventListener('click', function() {
+            navbarLinks.classList.toggle('active');
+            })
+        
+        });
+        var counter = 1;
+                  setInterval(function(){
+                    document.getElementById('radio' + counter).checked = true;
+                    counter++;
+                    if(counter > 4){
+                      counter = 1;
+                    }
+                  }, 5000);
+        </script>
+</head>
+<body>
+    <div class="col-12">
+        <header class="NavBarWrapper col-12">
+            <nav id="LeftNavBar">
+                <a href="index.html"><img src="zdjęcia/logo.png" alt="logo" class="logoImage"  class="button"></a>
+                <a href="index.html" class="logo" class="button">Azura</a>
+            </nav>
+            <nav id="CenterNavBar">
+                <ul>
+                    
+                    <li><a href = "index.html" class="button">Home</a></li>
+                    <li><a href = "najnowsze.html" class="button">Najnowsze</a></li>
+                    <li><a href = "archiwum.html" class="button">Archiwum</a></li>
+                </ul>
+            </nav>
+            <nav id="RightNavBar">
+                <ul>
+                    <li><a href = "portfolio.html" class="button">Portfolio</a></li>
+                    <li><a href = "kontakt.html" class="button">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="tresc col-12">
+            <div class="glowna">
+                <div class="przejscia">
+                    <div class="przejscia-obrazki">
+
+                      <input type="radio" name="radio-btn" id="radio1">
+                      <input type="radio" name="radio-btn" id="radio2">
+                      <input type="radio" name="radio-btn" id="radio3">
+                      <input type="radio" name="radio-btn" id="radio4">
+
+                      <div class="slide first"><img src="zdjęcia/baner1.jpg" alt="">
+                      </div>
+                      <div class="slide"><img src="zdjęcia/baner2.jpg" alt="">
+                      </div>
+                      <div class="slide"><img src="zdjęcia/baner3.jpg" alt="">
+                      </div>
+                      <div class="slide"><img src="zdjęcia/baner4.jpg" alt="">
+                      </div>
+
+                      <div class="auto-nav">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                      </div>
+
+                    </div>
+
+                    <div class="manual-nav">
+                      <label for="radio1" class="manual-btn"></label>
+                      <label for="radio2" class="manual-btn"></label>
+                      <label for="radio3" class="manual-btn"></label>
+                      <label for="radio4" class="manual-btn"></label>
+                    </div>
+                  </div>
+                    <h5 id="tekst"> Nowo Dodane</h5>
+                    <div class="linia col-12">
+                        <div class="linia col-9">
+                            
+                            <div class="col-3 ">
+                                <div class="obrazek-card">
+                                    <img class="obrazek rounded-corners" src="zdjęcia/icona1.jpg">
+                                </div>
+                                <div class="obrazek-tekst">
+                                    <h2> Obrazek 1</h2>
+                                </div>
+                            </div>
+
+                            <div class="col-3">
+                                <div class="obrazek-card">
+                                    <img class="obrazek rounded-corners" src="zdjęcia/icona1.jpg">
+                                </div>
+                                <div class="obrazek-tekst">
+                                    <h2> Obrazek 2</h2>
+                                </div>
+                            </div>
+
+                            <div class="col-3">
+                                <div class="obrazek-card">
+                                    <img class="obrazek rounded-corners" src="zdjęcia/icona1.jpg">
+                                </div>
+                                <div class="obrazek-tekst">
+                                    <h2> Obrazek 3</h2>
+                                </div>
+                            </div>
+
+                            <div class="col-3">
+                                <div class="obrazek-card">
+                                    <img class="obrazek rounded-corners" src="zdjęcia/icona1.jpg">
+                                </div>
+                                <div class="obrazek-tekst">
+                                    <h2> obrazek 4</h2>
+                                </div>
+                            </div>
+
+                            <div class="col-3">
+                                <div class="obrazek-card">
+                                    <img class="obrazek rounded-corners" src="zdjęcia/icona1.jpg">
+                                </div>
+                                <div class="obrazek-tekst">
+                                    <h2> obrazek 5</h2>
+                                </div>
+                            </div> 
+
+                            <div class="col-3">
+                                <div class="obrazek-card">
+                                    <img class="obrazek rounded-corners" src="zdjęcia/icona1.jpg">
+                                </div>
+                                <div class="obrazek-tekst">
+                                    <h2> obrazek 6</h2>
+                                </div>
+                            </div>
+
+                            <div class="col-3">
+                                <div class="obrazek-card">
+                                    <img class="obrazek rounded-corners" src="zdjęcia/icona1.jpg">
+                                </div>
+                                <div class="obrazek-tekst">
+                                    <h2> obrazek 7</h2>
+                                </div>
+                            </div>
+
+                            <div class="col-3">
+                                <div class="obrazek-card">
+                                    <img class="obrazek rounded-corners" src="zdjęcia/icona1.jpg">
+                                </div>
+                                <div class="obrazek-tekst">
+                                    <h2> obrazek 8</h2>
+                                </div>
+                            </div>
+
+                            <div class="col-3">
+                                <div class="obrazek-card">
+                                    <img class="obrazek rounded-corners" src="zdjęcia/icona1.jpg">
+                                </div>
+                                <div class="obrazek-tekst">
+                                    <h2> obrazek 9</h2>
+                                </div>
+                            </div>
+
+                            <div class="col-3">
+                                <div class="obrazek-card">
+                                    <img class="obrazek rounded-corners" src="zdjęcia/icona1.jpg">
+                                </div>
+                                <div class="obrazek-tekst">
+                                    <h2> obrazek 10</h2>
+                                </div>
+                            </div>
+
+                            <div class="col-3">
+                                <div class="obrazek-card">
+                                    <img class="obrazek rounded-corners" src="zdjęcia/icona1.jpg">
+                                </div>
+                                <div class="obrazek-tekst">
+                                    <h2> obrazek 11</h2>
+                                </div>
+                            </div>
+
+                            <div class="col-3">
+                                <div class="obrazek-card">
+                                    <img class="obrazek rounded-corners" src="zdjęcia/icona1.jpg">
+                                </div>
+                                <div class="obrazek-tekst">
+                                    <h2> obrazek 12</h2>
+                                </div>
+                            </div>
+
+                        </div class="linia col-3 sidebar">
+                            <iframe class="discord" src="https://discord.com/widget?id=849773103101902878&theme=dark"/>
+                        </div>
+                        <footer style="color:#fff">
+                            <div>
+                                Autor: Dawid Komperda
+                            </div>
+                        </footer>
+                    </div>
+                    <footer style="color:#fff">
+                        <div>
+                            Autor: Dawid Komperda
+                        </div>
+                    </footer>
+                </div>
+                <footer style="color:#fff">
+                    <div>
+                        Autor: Dawid Komperda
+                    </div>
+                </footer>
+        </div>
+        <footer style="color:#fff">
+            <div>
+                Autor: Dawid Komperda
+            </div>
+        </footer>
+    <footer style="color:#fff">
+        <div>
+            Autor: Dawid Komperda
+        </div>
+    </footer>
+    
+</body>
+</html>
